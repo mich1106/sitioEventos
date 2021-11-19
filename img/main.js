@@ -1,3 +1,16 @@
+document.addEventListener('DOMContentLoaded', () =>{
+  const elementosCarousel = document.querySelectorAll('.carousel');
+  M.Carousel.init(elementosCarousel, {
+      duration: 150,
+      dist: -80,
+      shift: 5,
+      padding: 5,
+      numVisible: 5,
+      indicators: true,
+      noWrap: false
+  });
+});
+
 function main() {
 
 (function () {
@@ -125,7 +138,7 @@ function main() {
         prevEl: '.swiper-button-prev',
       },
       autoplay: {
-        delay: 5500,
+        delay: 11200,
         disableOnInteraction: false,
       },
     });
