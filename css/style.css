@@ -505,19 +505,19 @@ img.img-thumbnail.team-img {
 	text-align:center;
 }
 
-.social-icons{
+.icons-redes{
 	padding: 0;
 	list-style:none;
-	margin:1em
+	margin:1em;
 }
-.social-icons li{
+.icons-redes li{
 	display:inline-block;
 	margin:.15em;
 	position:relative;
 	font-size:1.3em;
 }
 
-.social-icons i{
+.icons-redes i{
 	color:rgb(255, 255, 255);
 	position:absolute;
 	top:25px;
@@ -525,11 +525,12 @@ img.img-thumbnail.team-img {
 	left: 20px;
 	transition:all 265ms ease-out;
 }
-.social-icons a{
+.icons-redes a{
 	display:inline-block
 }
 
-.social-icons a:before{
+
+.icons-redes a:before{
 	transform:scale(1);
 	-ms-transform:scale(1);
 	-webkit-transform:scale(1);
@@ -539,29 +540,30 @@ img.img-thumbnail.team-img {
 	border-radius:100%;
 	display:block;
 	
-	background:linear-gradient(45deg,#f74848,#8f0000);
 	transition:all 265ms ease-out
 }
 
-.social-icons a:hover:before{
+.icons-redes a:hover:before{
 	transform:scale(0);
 	transition:all 265ms ease-in
 }
 
-.social-icons a:hover i{
+.icons-redes a:hover i{
 	transform:scale(2.2);
 	-ms-transform:scale(2.2);
 	-webkit-transform:scale(2.2);
-	color:#fcff54; background:-webkit-linear-gradient(45deg,#ff5454,#fa2f2f);
-	-webkit-background-clip:text;
-	-webkit-text-fill-color:transparent;
-	transition:all 265ms ease-in
+	transition:all 265ms ease-in;
+	display:block;
 }
 
 /* Contact Section */
 #contact {
 	padding: 75px 0;
 	background: #0000000f;
+}
+#conta{
+	padding: 0px 0;
+	
 }
 #contact .contact-item {
 	padding: 10px;
@@ -578,9 +580,13 @@ img.img-thumbnail.team-img {
 	padding: 30px 0;
 }
 #contact i.fa {
-	font-size: 22px;
+	font-size: 28px;
 	color: #c93030;
 	margin-bottom: 10px;
+	
+}
+.i.fa-whatsapp::before{
+	display: block;
 }
 #contact .text-danger {
 	color: #ff3333;
@@ -795,11 +801,6 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	background: #a74b47 !important;
 }
 
-
-
-
-
-
 .card-events {
 	background: #ffffff;
     padding: 15px;
@@ -822,3 +823,5 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
  	filter: invert(35%) sepia(97%) saturate(152) hue-rotate(
 47deg) brightness(119%) contrast(1);
  }
+
+
