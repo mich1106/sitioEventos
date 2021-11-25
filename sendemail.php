@@ -3,7 +3,7 @@ include "PHPMailer/class.phpmailer.php";
 include "PHPMailer/class.smtp.php";
 
 //Recibir todos los parámetros del formulario
-$para = 'michelopbau11@gmail.com';
+$para = 'contacto@gruponemsa.com';
 $asunto = 'Mensaje enviado desde la web de nemsa.mx';
 
 $name = $_POST['name'];
